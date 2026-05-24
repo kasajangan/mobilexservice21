@@ -1,0 +1,6 @@
+{
+  "name": "Mobile X Service",
+  "description": "Reparasi Gadget Premium berstandar micro-soldering presisi di Jakarta Selatan. Mengubah perangkat mati menjadi performa optimal modern.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
