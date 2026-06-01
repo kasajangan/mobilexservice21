@@ -16,7 +16,7 @@ export default function TestimonialSlider() {
           </span>
           <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-10 opacity-60">
             <div className="flex items-center gap-1.5 font-display text-sm font-bold text-gray-400">
-              <Shield className="w-4 h-4 text-emerald-400" />
+              <Shield className="w-4 h-4 text-red-500" />
               <span>SOP PRIVACY SECURITY</span>
             </div>
             <div className="flex items-center gap-1.5 font-display text-sm font-bold text-gray-400">
@@ -24,7 +24,7 @@ export default function TestimonialSlider() {
               <span>MEMBER OF IPM SOLDER</span>
             </div>
             <div className="flex items-center gap-1.5 font-display text-sm font-bold text-gray-400">
-              <div className="w-2 h-2 rounded-full bg-emerald-500" />
+              <div className="w-2 h-2 rounded-full bg-red-500" />
               <span>ESD SAFE ENVIRONMENT</span>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function TestimonialSlider() {
                 </span>
               </div>
               
-              <div className="w-8 h-8 rounded-full bg-slate-900 border border-slate-700/60 flex items-center justify-center text-emerald-400 shrink-0">
+              <div className="w-8 h-8 rounded-full bg-slate-900 border border-slate-700/60 flex items-center justify-center text-red-500 shrink-0">
                 <Check className="w-4 h-4" />
               </div>
             </div>

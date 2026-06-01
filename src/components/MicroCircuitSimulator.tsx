@@ -24,15 +24,15 @@ export default function MicroCircuitSimulator() {
   };
 
   return (
-    <div className="bg-slate-950 rounded-3xl border border-emerald-950/40 p-6 sm:p-8 relative overflow-hidden" id="simulator-sirkuit">
+    <div className="bg-slate-950 rounded-3xl border border-red-950/40 p-6 sm:p-8 relative overflow-hidden" id="simulator-sirkuit">
       {/* Background radial accent */}
-      <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-950/20 blur-[100px] pointer-events-none rounded-full" />
+      <div className="absolute top-0 right-0 w-80 h-80 bg-red-950/20 blur-[100px] pointer-events-none rounded-full" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-gold-950/10 blur-[100px] pointer-events-none rounded-full" />
 
       <div className="relative z-10 space-y-6">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto space-y-2">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-emerald-950/80 text-emerald-400 border border-emerald-500/20">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-red-950/80 text-red-500 border border-red-500/25">
             <Microscope className="w-3.5 h-3.5" />
             <span>LABORATORIUM MIKRO-ELEKTRONIK</span>
           </div>
@@ -48,7 +48,7 @@ export default function MicroCircuitSimulator() {
         <div className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 rounded-2xl border border-gold-500/20 p-5 md:p-6 shadow-2xl relative overflow-hidden my-4">
           {/* Subtle glowing lights */}
           <div className="absolute -right-12 -top-12 w-48 h-48 bg-gold-500/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute -left-12 -bottom-12 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -left-12 -bottom-12 w-48 h-48 bg-red-500/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative z-10 flex flex-col xl:flex-row gap-6 items-center justify-between">
             {/* Left side: Text and Badges */}
@@ -58,7 +58,7 @@ export default function MicroCircuitSimulator() {
               </span>
               <h4 className="font-display text-xl sm:text-2xl font-black text-white leading-tight">
                 Promo Servis LCD & Ganti Baterai <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-200 to-emerald-400 font-extrabold">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-amber-200 to-red-500 font-extrabold">
                   Oppo, Vivo, Redmi, Poco, & Samsung
                 </span>
               </h4>
@@ -90,7 +90,7 @@ export default function MicroCircuitSimulator() {
                       <div className="text-[5px] text-white font-mono scale-[0.8] origin-left pl-0.5 pt-0.5">AMOLED</div>
                     </div>
                     <div className="w-full h-3 bg-slate-900 rounded-xs flex items-center gap-1 px-1">
-                      <div className="w-1 h-1 rounded-full bg-emerald-400 animate-pulse" />
+                      <div className="w-1 h-1 rounded-full bg-red-500 animate-pulse" />
                       <div className="w-4 h-[2px] bg-slate-700" />
                     </div>
                   </div>
@@ -114,10 +114,10 @@ export default function MicroCircuitSimulator() {
               </div>
 
               {/* Battery Card View */}
-              <div className="bg-slate-950/80 rounded-xl p-4 border border-slate-800/80 flex items-center gap-4 hover:border-emerald-500/40 transition-colors group">
+              <div className="bg-slate-950/80 rounded-xl p-4 border border-slate-800/80 flex items-center gap-4 hover:border-red-500/45 transition-colors group">
                 {/* SVG Mockup of sleek technical Lithium Battery */}
-                <div className="w-14 h-24 bg-slate-900 rounded-md border border-slate-700/80 flex-shrink-0 relative overflow-hidden flex flex-col justify-between p-1 shadow-lg group-hover:shadow-emerald-500/10 transition-shadow">
-                  <div className="w-full h-1 bg-emerald-500 rounded-xs" />
+                <div className="w-14 h-24 bg-slate-900 rounded-md border border-slate-700/80 flex-shrink-0 relative overflow-hidden flex flex-col justify-between p-1 shadow-lg group-hover:shadow-red-500/10 transition-shadow">
+                  <div className="w-full h-1 bg-red-500 rounded-xs" />
                   <div className="flex-1 flex flex-col justify-between py-1 px-0.5">
                     <div className="flex justify-between items-center text-[5px] font-mono text-gray-500">
                       <span>Li-ion</span>
@@ -125,10 +125,10 @@ export default function MicroCircuitSimulator() {
                     </div>
                     {/* Battery progress blocks */}
                     <div className="space-y-0.5">
-                      <div className="h-1.5 bg-emerald-500/20 rounded-xs overflow-hidden">
-                        <div className="h-full w-[85%] bg-gradient-to-r from-emerald-600 to-emerald-400" />
+                      <div className="h-1.5 bg-red-500/20 rounded-xs overflow-hidden">
+                        <div className="h-full w-[85%] bg-gradient-to-r from-red-650 to-red-400" />
                       </div>
-                      <div className="text-center text-[4.5px] font-mono text-emerald-400 font-bold scale-[0.8] origin-center">
+                      <div className="text-center text-[4.5px] font-mono text-red-500 font-bold scale-[0.8] origin-center">
                         HEALTH 100%
                       </div>
                     </div>
@@ -141,7 +141,7 @@ export default function MicroCircuitSimulator() {
                 </div>
                 
                 <div className="text-left space-y-1">
-                  <span className="text-[10px] font-mono font-extrabold text-[#10b981] tracking-wider uppercase">
+                  <span className="text-[10px] font-mono font-extrabold text-[#ef4444] tracking-wider uppercase">
                     HIGH-CAPACITY BATTERY
                   </span>
                   <h5 className="font-display font-bold text-xs text-white">Pure Lithium-Ion Cell</h5>
@@ -177,13 +177,13 @@ export default function MicroCircuitSimulator() {
             </div>
 
             {/* Board representation */}
-            <div className="relative w-full aspect-[5/4] bg-neutral-900 rounded-xl border-2 border-emerald-950/80 overflow-hidden flex items-center justify-center p-2 group">
+            <div className="relative w-full aspect-[5/4] bg-neutral-900 rounded-xl border-2 border-red-950/80 overflow-hidden flex items-center justify-center p-2 group">
               {/* Green/Dark grid network lines background representative of PCB */}
-              <div className="absolute inset-0 opacity-20 pointer-events-none bg-[linear-gradient(to_right,#047857_1px,transparent_1px),linear-gradient(to_bottom,#047857_1px,transparent_1px)] bg-[size:24px_24px]" />
+              <div className="absolute inset-0 opacity-20 pointer-events-none bg-[linear-gradient(to_right,#b91c1c_1px,transparent_1px),linear-gradient(to_bottom,#b91c1c_1px,transparent_1px)] bg-[size:24px_24px]" />
               <div className="absolute inset-0 bg-radial-gradient from-transparent to-neutral-950 pointer-events-none" />
 
               {/* Silicon substrate details */}
-              <div className="w-[85%] h-[85%] rounded-lg border border-emerald-900/40 relative bg-emerald-950/40 p-4">
+              <div className="w-[85%] h-[85%] rounded-lg border border-red-900/40 relative bg-red-950/40 p-4">
                 {/* Silicon CPU square block */}
                 <div className="absolute top-[28%] left-[45%] -translate-x-1/2 -translate-y-1/2 w-28 h-28 bg-slate-800 rounded-md border-4 border-slate-700/60 flex flex-col items-center justify-center p-1 font-mono text-[9px] text-gray-400 shadow-xl">
                   <div className="w-8 h-8 rounded bg-gradient-to-tr from-gold-600 to-amber-400 flex items-center justify-center text-slate-950 font-bold text-[10px] mb-1">
@@ -196,7 +196,7 @@ export default function MicroCircuitSimulator() {
                 {/* Circuit copper traces */}
                 <svg className="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M 60,80 L 120,80 L 120,50" fill="none" stroke="#b45309" strokeWidth="1.5" strokeDasharray="2,2" opacity="0.6"/>
-                  <path d="M 120,120 L 120,180 L 180,180" fill="none" stroke="#047857" strokeWidth="1" strokeDasharray="3,1" opacity="0.5"/>
+                  <path d="M 120,120 L 120,180 L 180,180" fill="none" stroke="#b91c1c" strokeWidth="1" strokeDasharray="3,1" opacity="0.5"/>
                   <path d="M 220,100 L 220,150" fill="none" stroke="#d97706" strokeWidth="1.5" opacity="0.4"/>
                   <path d="M 120,140 L 220,140" fill="none" stroke="#d97706" strokeWidth="1.5" opacity="0.4"/>
                 </svg>
@@ -215,7 +215,7 @@ export default function MicroCircuitSimulator() {
                     >
                       {/* Pulse circle rings */}
                       <span className={`absolute inline-flex h-8 w-8 -left-4 -top-4 rounded-full opacity-75 animate-ping duration-1000 ${
-                        hasRestored ? 'bg-emerald-400/40' : 'bg-red-400/40'
+                        hasRestored ? 'bg-amber-400/40' : 'bg-red-400/40'
                       }`} />
                       
                       {/* Core interactive status dot */}
@@ -223,7 +223,7 @@ export default function MicroCircuitSimulator() {
                         isCurrentlySelected 
                           ? 'border-white bg-gold-400 scale-110 z-30' 
                           : hasRestored
-                            ? 'border-emerald-500 bg-emerald-600'
+                            ? 'border-gold-500 bg-gold-600'
                             : 'border-red-500 bg-red-600'
                       }`}>
                         {hasRestored ? (
@@ -277,9 +277,9 @@ export default function MicroCircuitSimulator() {
                     
                     {/* Simulated crosshair lines */}
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10 opacity-30">
-                      <div className="w-full h-px bg-emerald-400 absolute" />
-                      <div className="h-full w-px bg-emerald-400 absolute" />
-                      <div className="w-12 h-12 rounded-full border border-emerald-400 absolute" />
+                      <div className="w-full h-px bg-red-500 absolute" />
+                      <div className="h-full w-px bg-red-500 absolute" />
+                      <div className="w-12 h-12 rounded-full border border-red-500 absolute" />
                     </div>
 
                     <img 
@@ -300,9 +300,9 @@ export default function MicroCircuitSimulator() {
                     <div className="absolute bottom-4 left-4 right-4 z-20">
                       <div className={`w-full text-center px-2 py-1 rounded text-[10px] font-mono leading-none font-bold uppercase tracking-wider ${
                         isRestored(selectedTarget.id)
-                          ? 'bg-emerald-950/90 text-emerald-400 border border-emerald-500/30'
+                          ? 'bg-amber-950/90 text-gold-400 border border-gold-500/30'
                           : 'bg-red-950/90 text-red-400 border border-red-500/30'
-                      }`}>
+                       }`}>
                         STATUS: {isRestored(selectedTarget.id) ? 'OPTIMAL (PASS)' : 'FAULTY (SHORT CIRCUIT)'}
                       </div>
                     </div>
@@ -351,7 +351,7 @@ export default function MicroCircuitSimulator() {
             <div className="border-t border-slate-800/80 pt-4 mt-5 flex flex-col sm:flex-row justify-between items-center gap-4">
               <div className="text-xs text-gray-400 font-mono">
                 {isRestored(selectedTarget.id) ? (
-                  <span className="text-emerald-400 flex items-center gap-1.5">
+                  <span className="text-amber-400 flex items-center gap-1.5">
                     <CheckCircle className="w-4 h-4" />
                     Sirkuit pulih. Tegangan stabil 1.8V VCC_MAIN terdeteksi.
                   </span>
@@ -364,7 +364,7 @@ export default function MicroCircuitSimulator() {
               </div>
 
               {isRestored(selectedTarget.id) ? (
-                <div className="px-4 py-2 bg-emerald-950/45 border border-emerald-800/60 text-emerald-400 rounded-lg text-xs font-mono select-none">
+                <div className="px-4 py-2 bg-amber-950/45 border border-gold-800/60 text-gold-400 rounded-lg text-xs font-mono select-none">
                   ✓ Selesai Direparasi
                 </div>
               ) : (

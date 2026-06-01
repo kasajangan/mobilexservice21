@@ -26,11 +26,11 @@ export default function BeforeAfterSlider() {
   };
 
   return (
-    <div className="bg-slate-950/60 rounded-3xl p-6 sm:p-8 border border-emerald-950/40 backdrop-blur-xl" id="reparasi-visual">
+    <div className="bg-slate-950/60 rounded-3xl p-6 sm:p-8 border border-red-950/40 backdrop-blur-xl" id="reparasi-visual">
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-center">
         {/* Left column - Info */}
         <div className="flex-1 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-emerald-950/80 text-emerald-400 border border-emerald-500/20">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-red-950/80 text-red-500 border border-red-500/25">
             <Sparkles className="w-3.5 h-3.5 animate-pulse" />
             <span>ESTETIKA PRESTISE</span>
           </div>
@@ -43,15 +43,15 @@ export default function BeforeAfterSlider() {
 
           <div className="space-y-2 pt-2">
             <div className="flex items-center gap-2 text-sm text-gray-300">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+              <CheckCircle2 className="w-4 h-4 text-red-500 shrink-0" />
               <span>Pembersihan sisa fluks & korosi dengan gel ultrasonik khusus</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-300">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+              <CheckCircle2 className="w-4 h-4 text-red-500 shrink-0" />
               <span>Solder kawat tembaga mikro setipis helai rambut (0.02mm)</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-300">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+              <CheckCircle2 className="w-4 h-4 text-red-500 shrink-0" />
               <span>Proteksi lapisan anti-lembab & anti-oksidasi sirkuit</span>
             </div>
           </div>
@@ -90,14 +90,14 @@ export default function BeforeAfterSlider() {
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute top-3 right-3 bg-emerald-950/80 border border-emerald-500/30 px-2.5 py-1 rounded-md text-[10px] font-mono font-bold text-emerald-400">
+              <div className="absolute top-3 right-3 bg-red-950/80 border border-red-500/30 px-2.5 py-1 rounded-md text-[10px] font-mono font-bold text-red-400">
                 SESUDAH: Reparasi Emas Orisinal Pabrikan
               </div>
             </div>
 
             {/* Drag Handle Bar */}
             <div 
-              className="absolute top-0 bottom-0 w-1 bg-gradient-to-b from-gold-400 via-emerald-400 to-gold-600 cursor-ew-resize z-20"
+              className="absolute top-0 bottom-0 w-1 bg-gradient-to-b from-gold-400 via-red-500 to-gold-600 cursor-ew-resize z-20"
               style={{ left: `${sliderPosition}%` }}
             >
               <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-slate-900 border-2 border-gold-400 flex items-center justify-center shadow-lg shadow-gold-500/20 active:scale-110 transition-transform">

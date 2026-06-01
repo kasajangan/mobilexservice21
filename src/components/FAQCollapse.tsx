@@ -15,12 +15,12 @@ export default function FAQCollapse() {
   };
 
   return (
-    <div className="bg-slate-950/40 rounded-3xl p-6 sm:p-8 border border-emerald-950/45" id="faq-section">
+    <div className="bg-slate-950/40 rounded-3xl p-6 sm:p-8 border border-red-950/45" id="faq-section">
       <div className="max-w-3xl mx-auto space-y-6">
         
         {/* Header content */}
         <div className="text-center space-y-2">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-emerald-950/80 text-emerald-400 border border-emerald-500/20">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono bg-red-950/80 text-red-500 border border-red-500/25">
             <HelpCircle className="w-3.5 h-3.5" />
             <span>SOLUSI KEKHAWATIRAN</span>
           </div>

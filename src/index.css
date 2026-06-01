@@ -6,7 +6,7 @@
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
   
-  --color-emerald-925: #022316;
+  --color-red-925: #210202;
   --color-gold-50: #fffbeb;
   --color-gold-100: #fef3c7;
   --color-gold-200: #fde68a;
@@ -72,7 +72,7 @@ body {
   bottom: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(to bottom, rgba(217, 119, 6, 0.3), rgba(2, 35, 22, 0.1));
+  background: linear-gradient(to bottom, rgba(217, 119, 6, 0.35), rgba(185, 28, 28, 0.15));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;

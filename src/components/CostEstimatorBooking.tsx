@@ -195,7 +195,7 @@ Mohon konfirmasi slot prioritas saya hari ini. Terima kasih!`;
     <div id="booking-section" className="space-y-12">
       
       {/* High impact Scarcity Panel */}
-      <div className="bg-gradient-to-r from-amber-950/40 via-neutral-950 to-emerald-950/40 rounded-3xl border border-gold-600/25 p-5 md:p-6 flex flex-col md:flex-row justify-between items-center gap-6 shadow-xl relative overflow-hidden">
+      <div className="bg-gradient-to-r from-amber-950/40 via-neutral-950 to-red-950/40 rounded-3xl border border-gold-600/25 p-5 md:p-6 flex flex-col md:flex-row justify-between items-center gap-6 shadow-xl relative overflow-hidden">
         <div className="absolute inset-0 bg-gold-400/[0.01] pointer-events-none" />
         <div className="flex items-center gap-4">
           <div className="p-3 bg-gold-500/10 rounded-2xl border border-gold-500/30 text-gold-400 shrink-0 animate-bounce">
@@ -240,9 +240,9 @@ Mohon konfirmasi slot prioritas saya hari ini. Terima kasih!`;
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         
         {/* Left Side: Cost Estimator Card */}
-        <div className="bg-slate-950 border border-emerald-950/40 rounded-3xl p-6 sm:p-8 space-y-6 glow-card">
+        <div className="bg-slate-950 border border-red-950/40 rounded-3xl p-6 sm:p-8 space-y-6 glow-card">
           <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
-            <div className="p-2.5 bg-emerald-500/10 rounded-xl border border-emerald-500/30 text-emerald-400">
+            <div className="p-2.5 bg-red-500/10 rounded-xl border border-red-500/30 text-red-500">
               <Calculator className="w-5 h-5" />
             </div>
             <div>
@@ -352,12 +352,12 @@ Mohon konfirmasi slot prioritas saya hari ini. Terima kasih!`;
               </div>
               <div>
                 <span className="text-gray-500 uppercase">Protokol Keamanan:</span>
-                <span className="block text-emerald-400 font-bold mt-0.5">SOP Privasi 100%</span>
+                <span className="block text-red-500 font-bold mt-0.5">SOP Privasi 100%</span>
               </div>
             </div>
             
             <div className="text-[10px] text-gray-500 font-sans leading-relaxed pt-1 flex items-start gap-1">
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5" />
+              <ShieldCheck className="w-3.5 h-3.5 text-red-500 shrink-0 mt-0.5" />
               <span>Biaya pasti ditentukan setelah inspeksi mikroskopis logis. Kebijakan "No Repair, No Fee".</span>
             </div>
           </div>
@@ -379,7 +379,7 @@ Mohon konfirmasi slot prioritas saya hari ini. Terima kasih!`;
         </div>
 
         {/* Right Side: VIP Reservation Engine Form */}
-        <div className="bg-slate-950 border border-emerald-950/40 rounded-3xl p-6 sm:p-8 space-y-6 relative overflow-hidden" id="booking-form-card">
+        <div className="bg-slate-950 border border-red-950/40 rounded-3xl p-6 sm:p-8 space-y-6 relative overflow-hidden" id="booking-form-card">
           
           {!submittedBooking ? (
             <form onSubmit={handleBookingSubmit} className="space-y-4">
@@ -412,7 +412,7 @@ Mohon konfirmasi slot prioritas saya hari ini. Terima kasih!`;
                   onClick={() => setServiceType('vip_pickup')}
                   className={`py-2 px-3 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${
                     serviceType === 'vip_pickup' 
-                      ? 'bg-slate-800 text-gold-400 border border-emerald-500/10' 
+                      ? 'bg-slate-800 text-gold-400 border border-red-500/15' 
                       : 'text-gray-400 hover:text-white'
                   }`}
                 >
@@ -527,11 +527,11 @@ Mohon konfirmasi slot prioritas saya hari ini. Terima kasih!`;
             /* Booking Success Receipt Card */
             <div className="space-y-6 animate-fadeIn py-4">
               <div className="text-center space-y-2">
-                <div className="w-16 h-16 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="w-16 h-16 bg-red-500/10 border border-red-500/20 text-red-500 rounded-full flex items-center justify-center mx-auto mb-3">
                   <CheckCircle className="w-8 h-8 animate-pulse" />
                 </div>
                 <h4 className="font-display text-2xl font-bold text-white uppercase tracking-tight">KODE BOOKING AKTIF</h4>
-                <div className="inline-block bg-slate-900 px-4 py-2 rounded-2xl border-2 border-emerald-500/30 text-gold-400 font-mono text-xl font-bold tracking-widest">
+                <div className="inline-block bg-slate-900 px-4 py-2 rounded-2xl border-2 border-red-500/30 text-gold-400 font-mono text-xl font-bold tracking-widest">
                   {submittedBooking.bookingCode}
                 </div>
                 <p className="text-gray-400 text-xs max-w-sm mx-auto">
@@ -563,7 +563,7 @@ Mohon konfirmasi slot prioritas saya hari ini. Terima kasih!`;
                 </div>
                 <div className="flex justify-between border-b border-slate-800/60 pb-2">
                   <span className="text-gray-500">METODE LAYANAN:</span>
-                  <span className="text-emerald-400 font-bold uppercase">{submittedBooking.serviceType === 'onsite' ? '📍 ONSITE' : '🚗 VIP PICKUP'}</span>
+                  <span className="text-red-500 font-bold uppercase">{submittedBooking.serviceType === 'onsite' ? '📍 ONSITE' : '🚗 VIP PICKUP'}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-500">ALAMAT TERLOKASI:</span>
@@ -572,19 +572,19 @@ Mohon konfirmasi slot prioritas saya hari ini. Terima kasih!`;
               </div>
 
               {/* VIP Benefits inclusions checklist in receipt */}
-              <div className="border border-emerald-925 bg-emerald-950/20 p-4 rounded-xl space-y-2">
-                <span className="text-[10px] font-mono text-emerald-400 block font-bold tracking-wider uppercase">💎 COMPLIMENTARY BONUSES UNLOCKED:</span>
+              <div className="border border-red-925 bg-red-950/20 p-4 rounded-xl space-y-2">
+                <span className="text-[10px] font-mono text-red-500 block font-bold tracking-wider uppercase">💎 COMPLIMENTARY BONUSES UNLOCKED:</span>
                 <ul className="text-[11px] text-gray-300 space-y-1.5 font-sans">
                   <li className="flex items-center gap-2">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                    <span className="h-1.5 w-1.5 rounded-full bg-red-500" />
                     Deep Cleansing & Thermal Optimization (Worth Rp250.000)
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                    <span className="h-1.5 w-1.5 rounded-full bg-red-500" />
                     Premium Oleophobic Coating Treatment (Worth Rp150.000)
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                    <span className="h-1.5 w-1.5 rounded-full bg-red-500" />
                     Diagnostic Comprehensive Report & Battery check (Worth Rp100.000)
                   </li>
                 </ul>
@@ -595,7 +595,7 @@ Mohon konfirmasi slot prioritas saya hari ini. Terima kasih!`;
                 <button
                   type="button"
                   onClick={handleWhatsAppRedirect}
-                  className="w-full py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-display font-extrabold text-[13px] rounded-xl flex items-center justify-center gap-2.5 transition-all transform hover:-translate-y-0.5 shadow-xl shadow-emerald-950/50 cursor-pointer"
+                  className="w-full py-4 bg-red-600 hover:bg-red-500 text-white font-display font-extrabold text-[13px] rounded-xl flex items-center justify-center gap-2.5 transition-all transform hover:-translate-y-0.5 shadow-xl shadow-red-950/50 cursor-pointer"
                 >
                   <PhoneCall className="w-4 h-4 fill-current shrink-0" />
                   <span>KIRIM KODE & SLOT KE WHATSAPP (AKTIFKAN)</span>

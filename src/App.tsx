@@ -55,9 +55,9 @@ export default function App() {
     <div className="min-h-screen bg-[#030712] text-gray-100 flex flex-col font-sans relative antialiased selection:bg-gold-500/35 selection:text-white overflow-x-hidden">
       
       {/* BACKGROUND GRAPHICS: Glow Spots */}
-      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-emerald-950/20 rounded-full blur-[120px] pointer-events-none -translate-y-1/2" />
+      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-red-950/20 rounded-full blur-[120px] pointer-events-none -translate-y-1/2" />
       <div className="absolute top-[20%] right-1/4 w-[600px] h-[600px] bg-gold-950/10 rounded-full blur-[150px] pointer-events-none" />
-      <div className="absolute bottom-[20%] left-10 w-[450px] h-[450px] bg-emerald-950/15 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-[20%] left-10 w-[450px] h-[450px] bg-red-950/15 rounded-full blur-[100px] pointer-events-none" />
 
       {/* HEADER & NAV */}
       <header className="sticky top-0 z-50 bg-[#030712]/85 backdrop-blur-md border-b border-slate-900/80 transition-all">
@@ -65,7 +65,7 @@ export default function App() {
           
           {/* Logo Brand Brand */}
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => handleScroll('hero-section')}>
-            <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-tr from-gold-600 via-slate-950 to-emerald-900 border border-gold-400/30 flex items-center justify-center overflow-hidden shadow-md shadow-gold-500/5">
+            <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-tr from-gold-600 via-slate-950 to-red-950 border border-gold-400/30 flex items-center justify-center overflow-hidden shadow-md shadow-gold-500/5">
               <span className="font-display font-black text-sm sm:text-base text-red-500">MX</span>
               {/* Javanese abstract silhouette simulation inside logo */}
               <div className="absolute bottom-[-1px] w-full h-2.5 bg-gradient-to-t from-gold-500/20 to-transparent skew-y-3" />
@@ -111,7 +111,7 @@ export default function App() {
               href="https://wa.me/628123456789"
               target="_blank"
               rel="noreferrer"
-              className="px-4.5 py-2.5 rounded-xl text-xs font-mono font-extrabold uppercase bg-gradient-to-r from-emerald-700 to-emerald-600 hover:from-emerald-600 hover:to-emerald-500 text-white transition-all shadow-md flex items-center gap-1.5 cursor-pointer"
+              className="px-4.5 py-2.5 rounded-xl text-xs font-mono font-extrabold uppercase bg-gradient-to-r from-red-750 to-red-650 hover:from-red-650 hover:to-red-550 text-white transition-all shadow-md flex items-center gap-1.5 cursor-pointer"
             >
               <PhoneCall className="w-3.5 h-3.5" />
               <span>Priority WA</span>
@@ -166,7 +166,7 @@ export default function App() {
                   href="https://wa.me/628123456789"
                   target="_blank"
                   rel="noreferrer"
-                  className="w-full text-center py-3 rounded-lg text-xs font-mono font-bold uppercase bg-emerald-600 text-white flex items-center justify-center gap-1.5"
+                  className="w-full text-center py-3 rounded-lg text-xs font-mono font-bold uppercase bg-red-650 hover:bg-red-550 text-white flex items-center justify-center gap-1.5"
                 >
                   <PhoneCall className="w-3.5 h-3.5" />
                   <span>WA Utama</span>
@@ -202,7 +202,7 @@ export default function App() {
             <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-left">
               
               {/* Mini tag header */}
-              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-mono bg-emerald-950/80 text-emerald-400 border border-emerald-500/20 active:scale-95 transition-transform">
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-mono bg-red-950/80 text-red-400 border border-red-500/20 active:scale-95 transition-transform">
                 <Sparkles className="w-3 text-gold-400 animate-pulse shrink-0" />
                 <span className="tracking-widest uppercase font-bold text-[9px] sm:text-[10px]">STANDARDISASI MIKRO-ELEKTRONIK AKURAT</span>
               </div>
@@ -238,7 +238,7 @@ export default function App() {
                     desc: 'Pilihan onsite di tempat atau VIP Pick-up Kebayoran Lama.'
                   }
                 ].map((item, idx) => (
-                  <div key={idx} className="p-3.5 bg-slate-950/40 border border-slate-900 rounded-xl space-y-1 hover:border-emerald-500/20 transition-all">
+                  <div key={idx} className="p-3.5 bg-slate-950/40 border border-slate-900 rounded-xl space-y-1 hover:border-red-500/20 transition-all">
                     <span className="block text-xs font-bold text-gold-400 font-display uppercase tracking-wide">{item.title}</span>
                     <span className="block text-[11px] text-gray-500 font-sans leading-normal">{item.desc}</span>
                   </div>
@@ -271,7 +271,7 @@ export default function App() {
                   GARANSI 30 HARI FULL
                 </span>
                 <span className="pl-6 flex items-center gap-1.5">
-                  <Award className="w-4 h-4 text-emerald-400" />
+                  <Award className="w-4 h-4 text-red-500" />
                   DIREKTORAT MILI-SOLDER RESMI
                 </span>
               </div>
@@ -289,7 +289,7 @@ export default function App() {
 
                 {/* Badge 1: 100% Secure badge */}
                 <div className="self-end bg-slate-900/80 backdrop-blur-md border border-slate-700/60 px-3.5 py-1.5 rounded-xl flex items-center gap-2 shadow-lg">
-                  <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                   <div className="text-left font-mono text-[9px] leading-tight">
                     <span className="block font-bold text-white uppercase">100% Secure</span>
                     <span className="block text-gray-500">SOP / Data Protection Compliant</span>
@@ -298,7 +298,7 @@ export default function App() {
 
                 {/* Center Javanese gunungan art wireframe or schematic vector placeholder */}
                 <div className="w-full flex justify-center py-4 relative">
-                  <div className="absolute w-24 h-24 bg-gradient-to-tr from-gold-500/20 to-emerald-500/10 filter blur-xl rounded-full" />
+                  <div className="absolute w-24 h-24 bg-gradient-to-tr from-gold-500/20 to-red-500/15 filter blur-xl rounded-full" />
                   <svg className="w-36 h-36 text-gold-400/35 drop-shadow-lg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2500/svg" fill="none" stroke="currentColor" strokeWidth="1">
                     {/* Artistic Gunungan representation resembling wireframe */}
                     <path d="M 50,5 L 90,85 L 80,105 L 50,115 L 20,105 L 10,85 Z" strokeDasharray="3 2" />
@@ -408,7 +408,7 @@ export default function App() {
             {/* Header Solution intro */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end pb-4 border-b border-slate-900">
               <div className="lg:col-span-8 space-y-3 text-left">
-                <span className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest block">MEMPERKENALKAN SOLUSI KELAS S-TIER</span>
+                <span className="text-xs font-mono font-bold text-red-500 uppercase tracking-widest block">MEMPERKENALKAN SOLUSI KELAS S-TIER</span>
                 <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white leading-none">
                   MOBILE X SERVICE
                 </h2>
@@ -470,8 +470,8 @@ export default function App() {
                   desc: 'Pemasangan komponen moduler LCD, baterai, port dilakukan dengan kalibrasi presisi pabrikan kelas tinggi, menjaga estetika fisik orisinal gadget tetap berkelas.'
                 }
               ].map((benefit, b_idx) => (
-                <div key={b_idx} className="bg-slate-950/60 p-6 rounded-2xl border border-slate-900 hover:border-emerald-500/10 space-y-3 font-sans text-left">
-                  <div className="w-8 h-8 rounded-lg bg-emerald-950 text-emerald-400 border border-emerald-500/20 flex items-center justify-center font-bold">
+                <div key={b_idx} className="bg-slate-950/60 p-6 rounded-2xl border border-slate-900 hover:border-red-500/15 space-y-3 font-sans text-left">
+                  <div className="w-8 h-8 rounded-lg bg-red-950 text-red-500 border border-red-500/25 flex items-center justify-center font-bold">
                     ✓
                   </div>
                   <h4 className="font-display font-extrabold text-white text-sm sm:text-base tracking-tight pt-1 leading-snug">
@@ -513,7 +513,7 @@ export default function App() {
                   '💎 Genuine & High-Tier Spareparts Access Only'
                 ].map((serv, index) => (
                   <div key={index} className="flex items-center gap-2 px-3 py-2 bg-slate-950 border border-slate-900 rounded-xl text-gray-300">
-                    <span className="text-emerald-400">✓</span>
+                    <span className="text-red-500 font-bold font-sans">✓</span>
                     <span className="font-mono text-[10px] sm:text-xs">{serv}</span>
                   </div>
                 ))}
@@ -612,7 +612,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
             
             <div className="text-center max-w-3xl mx-auto space-y-3">
-              <span className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest">TESTIMONI ASLI</span>
+              <span className="text-xs font-mono font-bold text-red-500 uppercase tracking-widest block">TESTIMONI ASLI</span>
               <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white leading-tight">
                 Dipercaya Profesional & Residen Jakarta Selatan
               </h2>
@@ -659,8 +659,8 @@ export default function App() {
               Kami memberikan Garansi Penuh hingga 30 Hari untuk setiap komponen sirkuit yang telah kami perbaiki. Jika masalah sirkuit yang sama muncul kembali dalam masa garansi akibat cacat pengerjaan, kami berkomitmen untuk memperbaikinya ulang secara absolut gratis atau uang Anda dikembalikan 100% penuh tanpa perdebatan.
             </p>
 
-            <div className="inline-flex items-center gap-1.5 text-xs text-emerald-400 font-mono">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <div className="inline-flex items-center gap-1.5 text-xs text-red-500 font-mono">
+              <CheckCircle2 className="w-4 h-4 text-red-500 shrink-0" />
               <span>LOGIS, AMAN, DAN 100% TRANSPARAN.</span>
             </div>
 
@@ -713,7 +713,7 @@ export default function App() {
               </div>
               <div>
                 <span className="block font-display text-sm font-extrabold tracking-widest text-white">MOBILE X SERVICE</span>
-                <span className="block text-[8px] font-mono tracking-widest text-emerald-500 uppercase">THE FINE ART OF MICRO-SURGERY</span>
+                <span className="block text-[8px] font-mono tracking-widest text-red-500 uppercase">THE FINE ART OF MICRO-SURGERY</span>
               </div>
             </div>
 
@@ -726,7 +726,7 @@ export default function App() {
                 href="https://wa.me/628123456789" 
                 target="_blank" 
                 rel="noreferrer"
-                className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400 hover:text-white hover:border-emerald-500 transition-all shadow-md"
+                className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-red-500 hover:text-white hover:border-red-500 transition-all shadow-md"
               >
                 <PhoneCall className="w-4 h-4" />
               </a>
@@ -798,7 +798,7 @@ export default function App() {
             >
               <div className="flex justify-between items-center text-[10px] font-mono text-gold-400">
                 <span>📍 GOOGLE MAPS DIRECTORY</span>
-                <span className="text-emerald-450 uppercase font-bold group-hover:underline">Buka Rute &rarr;</span>
+                <span className="text-red-500 uppercase font-bold group-hover:underline">Buka Rute &rarr;</span>
               </div>
 
               <div className="h-20 bg-slate-950 rounded-lg relative overflow-hidden border border-slate-850 flex items-center justify-center p-2">
